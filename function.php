@@ -66,6 +66,8 @@ return $FilterA;
 if (isset($_POST["A"]))
 {
 foreach(FilterAuthor($Books) as $book){
+   
+   //--
     echo $book.' '."</br>" ; 
 }
 }
@@ -91,7 +93,7 @@ foreach(FilterName($Books) as $book){
 </label>
 <input type="submit" value="Filter for Author" Name="A">
 <input type="submit" value="Filter for Genres" Name="G">
-<input type="submit" value="Filter for Name" Name="N">
+<input type="submit" value="Filter for Name" Name="N"> 
     </form>
 </body>
 </html>
